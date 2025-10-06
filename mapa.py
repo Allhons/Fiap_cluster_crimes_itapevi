@@ -11,7 +11,7 @@ from streamlit_folium import st_folium
 # ---------------------------
 # CONFIGURAÇÕES
 # ---------------------------
-DATA_PATH = r"data\SPDadosCriminais_Itapevi(2025).xlsx"
+DATA_PATH = r"data/SPDadosCriminais_Itapevi(2025).xlsx"
 MODEL_PATH = r"models_output/best_kmeans_score0.9999.joblib"
 
 LAT_COL = "LATITUDE"
