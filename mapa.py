@@ -117,6 +117,7 @@ with st.sidebar:
     rubrica_filtro = None
     if "RUBRICA" in df.columns:
         rubricas = df["RUBRICA"].dropna().unique().tolist()
+        rubricas = [r for r in rubricas if r not in ["Estupro - Art. 213", "Estupro de vulneravel (art.217-A)"]]
         rubricas.sort()
         rubrica_filtro = st.multiselect("Selecione o(s) tipo(s) de rubrica:", options=rubricas, default=rubricas)
 
